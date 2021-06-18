@@ -1,4 +1,4 @@
-# TextStyleTransfer
+# Text Style Transfer
 SWCON401-00 Capstone Design
 Generating sarcastic utterances via text style transfer.
 
