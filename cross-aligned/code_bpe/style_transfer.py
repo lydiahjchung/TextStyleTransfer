@@ -45,7 +45,7 @@ def get_model(args, logger, sp):
 
 def run_model(args):
     time = datetime.now().timestamp()
-    train_filename = "data/sarc/sarc.train"
+    train_filename = "sarc/sarc.train"
     sp_model_path = "tmp/sarc_bpe"
 
     sp = spm.SentencePieceProcessor()

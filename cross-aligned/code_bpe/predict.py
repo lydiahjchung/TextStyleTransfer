@@ -3,13 +3,9 @@ import torch.nn as nn
 from utils import *
 from nltk.translate.bleu_score import sentence_bleu
 
-# PATH = "model_saves/model_0.0005_50_14:10_03-14-2020/" # Batch size = 64. Alt training from the beginning
-# PATH = "model_saves/model_0.0005_50_12:42_03-14-2020/" # Batch size = 512. Alt training from the beginning
-# PATH = "model_saves/model_0.0005_50_15:52_03-14-2020/"
-# PATH = "model_saves/model_0.0005_20_12:24_03-15-2020/" #Autorncoder only
-PATH = "model_saves/model_0.0005_50_01:57_03-17-2020/"
+PATH = "save/model_0.0001_120_Jun-08-2021_12-02-13/"
 PREDICTIONS_OUTPUT_FILE = PATH+"output_predictions"
-PREDICTIONS_INPUT_FILE = "/workspace/language-style-transfer-pytorch/data/yelp/sentiment.dev"
+PREDICTIONS_INPUT_FILE = "/workspace/TextStyleTransfer/cross-aligned/sarc/sarc.dev"
 
 def predict_batch(model, test_inputs, sentiment, greedy_search=True, plain_format=True):
     test_outputs = []   
